@@ -1,0 +1,33 @@
+# Rajesh's fundamentals desk — the mandate this wrapper is built around.
+#
+# Same format as hedge_fund/fund/example.yaml (validated against
+# hedge_fund.fund.spec.load_spec). One long-only strategy staffed by the
+# three fundamentals personas; no quant models, no leverage.
+#
+# NOTE on execution: the repo's own runners (aihf paper / aihf backtest)
+# construct FDClient themselves (hedge_fund/run.py), so this mandate
+# cannot be pointed at the free EdgarDataClient through the CLI. The
+# wrapper therefore drives the same personas' predict() directly with
+# EdgarDataClient — see run_fundamentals.py. This file is the desk's
+# declarative spec (personas, blend, risk), kept so the configuration
+# lives in the repo's native format.
+#
+# Universe is fixed at run time, per the format: AAPL, MSFT, ADBE, V, MA.
+schema_version: 2
+name: rajesh-fundamentals
+strategies:
+  - name: fundamentals          # discretionary pod: value/quality personas
+    blend: {mode: long_only}
+    weight: 1.0
+    models:
+      - name: buffett
+      - name: graham
+      - name: munger
+risk:
+  max_position_pct: 0.25
+  max_gross_exposure: 1.0
+  halve_drawdown_pct: 0.10
+  max_drawdown_pct: 0.20
+capital: 100000
+rebalance: weekly
+benchmark: SPY

@@ -1,0 +1,36 @@
+{
+  "ticker": "AAPL",
+  "trade_date": "2026-11-20",
+  "framework": "ai-hedge-fund",
+  "framework_rating": "bullish",
+  "verdict": "buy candidate",
+  "agents": [
+    {
+      "agent": "buffett",
+      "signal": "bullish",
+      "confidence": 90.0,
+      "value": 0.9,
+      "reasoning": "AAPL's strong competitive moat, led by a durable high returns on equity of 1.48 and pricing power evident in stable or improving margins, makes me confident in its ability to generate consistent cash flows. The company's management quality, as shown in its sensible leverage and consistent free cash flow, is also a testament to its strong financials. With a book value compounding of 0.13, I'm pleased to see the company's balance sheet is in good health. The valuation, while not spectacular, seems reasonable given the quality and growth of the business. I'm holding on for the long term, expecting AAPL to continue delivering for shareholders.",
+      "abstained": false,
+      "model": "llama3.2:3b",
+      "elapsed_s": 441.5
+    }
+  ],
+  "fundamentals_evidence": {
+    "snapshot_summary": {
+      "roe_avg": 1.48,
+      "net_margin_avg": 0.2576,
+      "gross_margin_trend": 0.0577,
+      "bvps_cagr": 0.1253,
+      "debt_to_equity_latest": 0.6969,
+      "market_cap_latest": 4840889506000.0,
+      "eps_growth_yoy": 0.2037
+    },
+    "report_path": "/home/hatch/workspace/goals/experimental-paper-trading-agent/files/repo_agents/ai_hedge_fund/repo/rajesh_fundamentals/output/AAPL_snapshot.txt"
+  },
+  "risks": {
+    "bearish_reasoning": [],
+    "data_gaps": []
+  },
+  "raw_report_path": "/home/hatch/workspace/goals/experimental-paper-trading-agent/files/repo_agents/ai_hedge_fund/repo/rajesh_fundamentals/output/AAPL_snapshot.txt"
+}

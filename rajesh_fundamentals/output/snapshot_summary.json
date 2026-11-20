@@ -1,0 +1,15 @@
+{
+  "AAPL": {
+    "periods": 20,
+    "latest_period": "2026-09-26",
+    "latest_filed": "2026-11-03",
+    "market_cap": 4840889506000.0,
+    "market_cap_source": "price x shares",
+    "pe_latest": 27.7436,
+    "roe_avg": 1.48,
+    "net_margin_avg": 0.2576,
+    "debt_to_equity_latest": 0.6969,
+    "snapshot_hash": "3d240aecb02fed52234c20f2",
+    "snapshot_path": "/home/hatch/workspace/goals/experimental-paper-trading-agent/files/repo_agents/ai_hedge_fund/repo/rajesh_fundamentals/output/AAPL_snapshot.json"
+  }
+}
